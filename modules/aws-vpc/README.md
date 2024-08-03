@@ -55,12 +55,15 @@ No modules.
 | <a name="input_aws_account"></a> [aws\_account](#input\_aws\_account) | The main aws account used to populate the ressources | `string` | n/a | yes |
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | The region in which the resources should be deployed | `string` | `"eu-west-1"` | no |
 | <a name="input_aws_region_az"></a> [aws\_region\_az](#input\_aws\_region\_az) | AWS region and availability zone | `list(string)` | <pre>[<br>  "a",<br>  "b"<br>]</pre> | no |
+| <a name="input_azs"></a> [azs](#input\_azs) | A list of availability zones names or ids in the region | `list(string)` | `[]` | no |
 | <a name="input_env_type"></a> [env\_type](#input\_env\_type) | -- Project ----------------------------------------------------------------------- | `string` | `"app"` | no |
 | <a name="input_my_workspace"></a> [my\_workspace](#input\_my\_workspace) | terraform.workspace Replacement | `string` | `"staging"` | no |
+| <a name="input_private_subnets"></a> [private\_subnets](#input\_private\_subnets) | A list of private subnets inside the VPC | `list(string)` | `[]` | no |
 | <a name="input_project_name"></a> [project\_name](#input\_project\_name) | Name of the project | `string` | n/a | yes |
+| <a name="input_public_subnets"></a> [public\_subnets](#input\_public\_subnets) | A list of public subnets inside the VPC | `list(string)` | `[]` | no |
 | <a name="input_resource_tags"></a> [resource\_tags](#input\_resource\_tags) | Tags applied to all resources | `map(string)` | <pre>{<br>  "Terraform": "True"<br>}</pre> | no |
-| <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | n/a | `string` | n/a | yes |
-| <a name="input_vpc_subnet_size"></a> [vpc\_subnet\_size](#input\_vpc\_subnet\_size) | n/a | `string` | `"4"` | no |
+| <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | CIDR to associate with the VPC to extend the IP Address pool | `string` | n/a | yes |
+| <a name="input_vpc_subnet_size"></a> [vpc\_subnet\_size](#input\_vpc\_subnet\_size) | The size of the additional bits which extends the cidr prefix | `string` | `"4"` | no |
 
 ## Resources
 
