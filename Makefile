@@ -6,7 +6,7 @@ all: help
 ##@ Docs Generation
 docs: ## Generates Terraform docs for modules
 	$(info ************  Terraform Docs ************)
-	@terraform-docs ./terraform/
+	@terraform-docs .
 
 ##@ Checks
 tflint: ## Checks Terraform files with tflint
